@@ -1,0 +1,14 @@
+About The "i" Folder
+====================
+
+I abbreviated "implementations" as "i".
+
+Since Potomac Hackers in open to many languages, I'm hoping we will put
+together several implementations in several different languages.
+
+Perhaps we will also make the implementations compatible with each other. That
+way multiple Players and multiple Judges, even if running different
+implementations, can still compete against each other.
+
+Our mailing list is here:
+http://groups.google.com/group/potomac-hackers
