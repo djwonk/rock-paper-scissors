@@ -1,0 +1,36 @@
+Rock Paper Scissors
+===================
+
+Judge:
+  * has a name
+  * administers rounds and games
+  * keeps statistics
+
+Player:
+  * has a name
+  * may keep statistics if desired
+
+Game: 
+  * is made up of rounds.
+  * 3 winning rounds gives game winner
+  * consists of 2 players
+  * is administered by a judge
+  * a game consists of up to 5 throws
+  * winner is declared when wins equals 3.
+  
+Round:
+  * has throws
+  * continues until someone wins round
+  * in other words, a round continues on a tie
+
+Throw:
+  * a player's selection from choices.
+  * kinds of throws:
+    * rock
+    * paper
+    * scissors
+  * throw results:
+    * rock beats scissors
+    * paper beats rock
+    * scissors beats paper
+    * otherwise a tie

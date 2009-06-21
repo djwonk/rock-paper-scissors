@@ -1,0 +1,54 @@
+== JUDGE_INIT ==
+
+Judge has a list of Players.
+
+== SETUP_GAME ==
+
+The Judge goes through its list of players.
+The Judge broadcasts that a game is ready
+by sending a message to each Player that says:
+"A game is about to start"
+
+The Judge should send these messages in random order,
+so that no one Player has an unfair advantage.
+
+The Judge waits until 2 Player respond in the affirmative.
+
+For example:
+* Player 1 sends a message indicating "I want to play play".
+  Judge acknowledges Player 1, saying "You have a seat at the game".
+* Player 2 sends a message indicating "I want to play play".
+  Judge acknowledges Player 2, saying "You have a seat at the game".
+* Player 3 sends a message indicating "I want to play play".
+  Judge tells Player 3 that "There is no more room, try again at the next game".
+
+== START_ROUND ==
+
+The Judge keeps an internal clock that will countdown from 3 seconds.
+* Judge tells players "3".
+* Judge tells players "2".
+* Judge tells players "1".
+
+After the "1" is announced, it now time for each Player to respond.
+The Judge waits until 0 seconds remains.
+(If a Player responses before "1", that player automatically loses.)
+
+The Judge calculates the result.
+If a Player won increment that Player's win count.
+If a Player lost increment that Player's loss count.
+If a Player tied increment that Player's tie count.
+
+Judge announces the round results:
+Depending on the result, the Judge tells each Player:
+a. You won because your throw beat your opponent's throw. (normal win)
+b. You lost because your opponent's throw beat your throw. (normal loss)
+c. You tied because both Players threw the same thing. (normal tie)
+d. You won because you threw and your opponent did not. (win by forfeit)
+e. You lost because your opponent threw and your did not. (loss by forfeit)
+f. You tied because neither you nor your opponent threw. (tie by forfeit)
+
+If neither Player has 3 wins, then go to START_ROUND.
+Otherwise, announce the game winner and announce game statistics.
+(Remember that a game consists of multiple rounds.)
+
+Since, the game is over, go to SETUP_GAME.

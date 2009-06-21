@@ -1,0 +1,6 @@
+Future Ideas for Rock-Paper-Scissors
+====================================
+
+* During the countdown, as soon as a Player throws, the Judge will broadcast the throw after a small delay.  The idea here is that a Player should not throw too soon, because other players could react and throw a winning hand.  (The likely result of this "enhancement" is that it drives the game more towards speed and perhaps less towards overall strategy.)
+
+* Improve the Judge to enable tournament-style play.
